@@ -1,25 +1,35 @@
 import React, { useRef, useState, useEffect } from "react";
-import Header from "@/component/Header.jsx";
-import Hero from "@/component/Hero.jsx";
-import ContactForm from "@/component/ContactForm.jsx";
-import Footer from "@/component/Footer.jsx";
+import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import routes from "./routes";
+import Header from "./component/Header";
+import Hero from "./component/Hero";
+import ContactForm from "./component/ContactForm";
+import Footer from "./component/Footer";
+import HomePage from "./pages/HomePage";
+import ProductPage from "./pages/ProductPage";
+import ProfilePage from "./pages/ProfilePage";
+import NotFound from "./pages/NotFound";
+// import TableList from "./component/TableList";
+import UserPage from "./modules/user/pages/UserPage";
+
 import {
-  Box,
-  Button,
-  Heading,
   HStack,
+  Heading,
   Stack,
-  Table,
+  Button,
+  Box,
   Text,
+  Table,
 } from "@chakra-ui/react";
 import {
   PaginationItems,
   PaginationNextTrigger,
   PaginationPrevTrigger,
   PaginationRoot,
-} from "@/components/ui/pagination.jsx";
+} from "@/components/ui/pagination";
 
-const Demo = () => {
+const Demo2 = () => {
   const item = {
     id: 1,
     name: "Product 1",
@@ -109,8 +119,13 @@ const Demo = () => {
 
   return (
     <div>
-      <h1>I am a demo functional component</h1>
-      <h1>yes yes</h1>
+      <Router>
+        <Routes>
+          {routes.map((route, index) => (
+            <Route key={index} path={route.path} element={route.element} />
+          ))}
+        </Routes>
+      </Router>
 
       <h1>Chakra UI Connected</h1>
       <HStack>
@@ -157,6 +172,34 @@ const Demo = () => {
       </Stack>
 
       <br />
+      <h1>React Dom Router</h1>
+      <p>Browser Router</p>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route
+            path="/product/:productID/:productName"
+            element={<ProductPage />}
+          ></Route>
+          <Route
+            path="/profile/:userID/:userName"
+            element={<ProfilePage />}
+          ></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </BrowserRouter>
+
+      <p>Hash Router</p>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/product" element={<ProductPage />}></Route>
+          <Route path="/profile" element={<ProfilePage />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </HashRouter>
+
+      <br />
       <h1>UseEffect Example</h1>
       <div>{JSON.stringify(pdata)}</div>
       <br />
@@ -174,6 +217,7 @@ const Demo = () => {
       <p ref={myPTag}></p>
       <button onClick={fetchData}>Call API</button>
       <button onClick={showData}>Show Data</button>
+
       <h1>React Hook</h1>
       <p ref={(p) => (myHeadLine = p)}></p>
       <button onClick={() => Change()}>Submit</button>
@@ -190,4 +234,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default Demo2;
