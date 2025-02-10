@@ -1,8 +1,46 @@
 import { useState } from "react";
+import { toaster } from "@/components/ui/toaster";
 import { createBank } from "@modules/Bank/services/bankService";
 
 export const useBankForm = () => {
-    const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
+    name: "",
+    bank_code: "",
+    email: "",
+    phone: "",
+    website: "",
+    location: "",
+    address: "",
+    active_status: 1,
+    created_by: 1,
+    updated_by: 1,
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setErrors({});
+
+    try {
+      const response = await createBank(formData);
+      console.log("Bank Created:", response);
+
+      toaster.success({
+        title: "Success",
+        description: "Bank created successfully!",
+        duration: 3000,
+        isClosable: true,
+      });
+
+      setFormData({
         name: "",
         bank_code: "",
         email: "",
@@ -10,51 +48,31 @@ export const useBankForm = () => {
         website: "",
         location: "",
         address: "",
-        active_status: "1",
+        active_status: 1,
         created_by: 1,
-        updated_by: 1
-    });
+        updated_by: 1,
+      });
+    } catch (error) {
+      console.error("Error creating bank:", error);
+      if (error.response?.data?.errors) {
+        setErrors(error.response.data.errors);
+      }
 
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
+      toaster.create({
+        title: "Error",
+        type: "error",
+        description:
+          error.response?.data?.message || "Something went happend wrong!",
+        duration: 3000,
+        // isClosable: true,
+        // placement: "top-end",
+        overlap: true,
+        // offsets: { left: "20px", top: "0px", right: "20px", bottom: "20px" },
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prev) => ({ ...prev, [name]: value }));
-    };
-
-    const handleRadioChange = (value) => {
-        setFormData((prev) => ({ ...prev, active_status: value }));
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setLoading(true);
-        setError(null);
-
-        try {
-            const response = await createBank(formData);
-            console.log("Bank Created:", response);
-            alert("Bank created successfully!");
-            setFormData({
-                name: "",
-                bank_code: "",
-                email: "",
-                phone: "",
-                website: "",
-                location: "",
-                address: "",
-                active_status: "1",
-                created_by: 1,
-                updated_by: 1
-            });
-        } catch (err) {
-            console.error("Error creating bank:", err);
-            setError(err);
-        } finally {
-            setLoading(false);
-        }
-    };
-
-    return { formData, loading, error, handleChange, handleRadioChange, handleSubmit };
+  return { formData, loading, errors, handleChange, handleSubmit };
 };
