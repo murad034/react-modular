@@ -11,7 +11,7 @@ export const useBankForm = () => {
     website: "",
     location: "",
     address: "",
-    active_status: 1,
+    active_status: "1",
     created_by: 1,
     updated_by: 1,
   });
@@ -47,7 +47,7 @@ export const useBankForm = () => {
         website: "",
         location: "",
         address: "",
-        active_status: 1,
+        active_status: "1",
         created_by: 1,
         updated_by: 1,
       });
