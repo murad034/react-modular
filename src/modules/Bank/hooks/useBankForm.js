@@ -31,7 +31,6 @@ export const useBankForm = () => {
 
     try {
       const response = await createBank(formData);
-      console.log("Bank Created:", response);
 
       toaster.success({
         title: "Success",
@@ -53,16 +52,25 @@ export const useBankForm = () => {
         updated_by: 1,
       });
     } catch (error) {
-      console.error("Error creating bank:", error);
-      if (error.response?.data?.errors) {
-        setErrors(error.response.data.errors);
+      // console.error("Error creating bank:", error);
+
+      //  if (error.response?.data?.errors) {
+      //   setErrors(error.response.data.errors);
+      // }
+
+      if (error?.missingFields) {
+        const missingFieldsArray = error.missingFields;
+        const formattedErrors = missingFieldsArray.reduce((acc, field) => {
+          acc[field] = ["This field is required."];
+          return acc;
+        }, {});
+        setErrors(formattedErrors);
       }
 
       toaster.create({
         title: "Error",
         type: "error",
-        description:
-          error.response?.data?.message || "Something went happend wrong!",
+        description: error?.message || "Something went wrong!",
         duration: 3000,
         // isClosable: true,
         // placement: "top-end",
