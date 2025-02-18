@@ -5,9 +5,9 @@ import "./assets/css/style.css";
 import { Provider } from "@/components/ui/provider";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  // <StrictMode>
     <Provider>
       <App />
     </Provider>
-  </StrictMode>
+   // </StrictMode>
 );

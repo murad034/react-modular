@@ -16,6 +16,8 @@ export const useBankForm = () => {
     updated_by: 1,
   });
 
+  console.log("useBankForm js");
+
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 

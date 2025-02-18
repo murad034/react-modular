@@ -13,6 +13,9 @@ import { Radio, RadioGroup } from "@/components/ui/radio";
 import { useBankForm } from "@modules/Bank/hooks/useBankForm";
 
 const BankPage = () => {
+  
+  console.log("Bank Pages jsx");
+
   const { formData, loading, errors, handleChange, handleSubmit } =
     useBankForm();
 
