@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import routes from "./routes";
+import routes from "./routes.jsx";
 import Header from "./component/Header";
 import Hero from "./component/Hero";
 import ContactForm from "./component/ContactForm";
