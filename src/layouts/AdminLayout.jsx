@@ -6,22 +6,27 @@ import { Outlet } from "react-router-dom";
 
 const AdminLayout = () => {
     return (
-        <div className="flex h-screen">
-            {/* Sidebar */}
-            <Sidebar />
+        <div className="wrapper site-main">
+            {/* Header */}
+            <Header />
 
-            <div className="flex flex-col flex-grow">
-                {/* Header */}
-                <Header />
+            <div className="hajj-dashboard-content">
+                <div className="container-fluid">
+                    <div className="hajj-dashboard-container">
+                        {/* Sidebar */}
+                        <Sidebar />
 
-                {/* Main Content */}
-                <main className="p-4 flex-grow">
-                    <Outlet />
-                </main>
+                        {/* Main Content */}
+                        <main className="dash-content-main">
+                            <Outlet />
+                        </main>
 
-                {/* Footer */}
-                <Footer />
+                    </div>
+                </div>
             </div>
+
+            {/* Footer */}
+            <Footer />
         </div>
     );
 };

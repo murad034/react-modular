@@ -6,10 +6,8 @@ import { Toaster } from "@/components/ui/toaster";
 const App = () => {
   console.log("App jsx");
   return (
-    <div>
+    <div className="hold-transition hajj-dashboard sidebar-mini layout-fixed">
       <Toaster />
-      <h1>React Project</h1>
-      <br />
       <BrowserRouter>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>

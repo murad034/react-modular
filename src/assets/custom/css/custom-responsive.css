@@ -1,0 +1,856 @@
+@media (min-width: 992px){
+	.resView{
+		display: none !important;
+	}
+
+	.hajj-dashboard .container-fluid{
+		width: calc(100vw - 60px);
+	}
+	.navbar-expand-lg .navbar-collapse{
+		width: 100%;
+	}
+	.navbar-expand-lg .navbar-nav{
+		margin-left: auto;
+	}
+
+	#ehajjInfoModal .modal-dialog{
+		max-width: 980px;
+	}
+
+	.profile-info-wrap{
+		max-width: 100%;
+	}
+	.profile-info-wrap .profile-info-lists{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.profile-info-wrap .profile-info-lists .profile-info-item{
+		width: 50%;
+		padding-right: 15px;
+	}
+	.hajj-profile-dashboard{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+@media (min-width: 1200px){
+	#ehajjInfoModal .modal-dialog{
+		max-width: 1140px;
+	}
+	.profile-info-wrap .profile-info-lists .profile-info-item{
+		width: 50%;
+		padding-right: 15px;
+	}
+	.modal-info-block .profile-info-wrap .profile-info-lists .profile-info-item{
+		width: 100%;
+	}
+
+	.home-alc-container{
+		padding: 20px 20px 10px;
+	}
+}
+
+@media (min-width: 1365px){
+	.dash-feature-cards-sec .dash-feature-col{
+		-ms-flex: 0 0 20%;
+    	flex: 0 0 20%;
+    	max-width: 20%;
+	}
+}
+@media (min-width: 1450px){
+	.container{
+		max-width: 1380px;
+	}
+	.hajj-dashboard .container-fluid{
+		width: calc(100vw - 100px);
+	}
+	.home-src-lists{
+		max-width: 1200px;
+	}
+	#ehajjInfoModal .modal-dialog{
+		max-width: 1380px;
+	}
+}
+
+@media (min-width: 1680px){
+	.container{
+		max-width: 1470px;
+	}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1679px){
+	.hajj-reg-info-content h2{
+		font-size: 36px;
+	}
+
+	.hajj-package-list .package-list-item{
+		min-height: 50px;
+	}
+	.hajj-package-list .package-list-item,
+	.hajj-package-list .package-list-item .list-text{
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.feature-cards-item p{
+		font-size: 15px;
+	}
+
+}
+@media (min-width: 992px) and (max-width: 1380px){
+
+}
+
+@media (max-width: 1380px){
+	.hajj-reg-info-content h2{
+		font-size: 36px;
+	}
+	.hajj-reg-info-content .hajj-info-block .hajj-reg-info-item p{
+		font-size: 22px;
+	}
+	.hajj-dashboard-container{
+		padding-left: 280px;
+	}
+	.hajj-dashboard-container .dash-sidebar{
+		width: 250px;
+	}
+	.dash-tab-menu .nav-tabs .nav-link{
+		font-size: 14px;
+	}
+
+	.dash-feature-item .dash-feature-icon{
+		height: 36px;
+		width: 50px;
+	}
+	.dash-feature-item{
+		padding: 20px 25px;
+	}
+	.dash-feature-item h3{
+		font-size: 22px;
+	}
+	.dash-feature-item p{
+		font-size: 15px;
+	}
+	.section-title h2{
+		font-size: 28px;
+	}
+	.dash-tab-content h3{
+		font-size: 20px;
+	}
+	.dash-menu-item .dash-menu-text{
+		font-size: 14px;
+		line-height: 16px;
+		padding: 8px 5px 8px 36px;
+	}
+	.dash-menu-item a .dash-menu-icon{
+		font-size: 16px;
+		height: 20px;
+		top: 8px;
+		width: 26px;
+		left: 6px;
+	}
+	.hajj-dashboard-container .dash-sidebar{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.dash-menu-item .dash-arrow-icon{
+		top: 4px;
+		font-size: 14px;
+	}
+	.dash-submenu li a{
+		font-size: 14px;
+		padding: 5px 10px;
+	}
+
+    .dash-list-table .btn,
+    .btn,
+    .bs_radio [type="radio"]:checked + label,
+    .bs_radio [type="radio"]:not(:checked) + label,
+    .form-control,
+    .src-hajj-tracking-number p{
+        font-size: 14px;
+    }
+    .copyright-content p{
+        font-size: 13px;
+    }
+    .dash-table.table thead th,
+    .dash-table.table tbody td{
+        padding: 8px;
+        font-size: 14px;
+        background: rgba(245, 245, 245, 1);
+    }
+    .dash-table.table thead th{
+        background: #D2D2D2;
+    }
+
+    .bs_radio [type="radio"]:checked + label:before,
+    .bs_radio [type="radio"]:not(:checked) + label:before{
+        height: 16px;
+        width: 16px;
+    }
+    .bs_radio [type="radio"]:checked + label:after,
+    .bs_radio [type="radio"]:not(:checked) + label:after{
+        height: 10px;
+        width: 10px;
+    }
+
+    tr.table-row-space td,
+    .dash-table.table tr.table-row-space td{
+        padding: 2px !important;
+        font-size: 6px;
+    }
+    .hajj-package-list .package-list-item,
+	.hajj-package-list .package-list-item .list-text{
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.profile-info-item{
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.section-gmb-lists .dash-table.table tbody td,
+	.section-gmb-lists .dash-table.table thead th{
+		font-size: 13px;
+	}
+	.section-gmb-lists .dash-table.table .btn-listview-round i,
+	.section-gmb-lists .dash-table.table .btn-listview-round{
+		font-size: 12px;
+	}
+	.dash-section-card .section-card-container h3,
+	.dash-section-card .section-card-title h3{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.section-gmb-lists .table .gmb-lists-img{
+		height: 50px;
+		width: 50px;
+	}
+	.dash-section-card .section-card-container{
+		padding: 20px 20px 10px;
+	}
+
+	.certificate-menu-item a{
+		height: 100px;
+		padding: 15px;
+	}
+	.certificate-menu-item a .pdf-download-icon{
+		height: 24px;
+		width: 24px;
+		background-size: 24px;
+	}
+	.certificate-menu-item a .pdf-menu-text{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 1279px){
+	.ehajj-list-table .table th,
+	.ehajj-list-table .table td{
+		font-size: 13px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.hajj-dashboard-container{
+		padding-left: 280px;
+	}
+	.hajj-dashboard-container .dash-sidebar{
+		width: 250px;
+	}
+	.login-info-box h3{
+		font-size: 26px;
+	}
+	.login-info-box .btn{
+		font-size: 18px;
+	}
+	.login-info-box .btn:hover{
+        color: #ffffff !important;
+        background: #097E35 !important;
+    }
+
+	.login-info-box .fpass-text,
+	.site-header .navbar-expand-lg .navbar-nav .nav-link,
+	.login-info-box p,
+	.login-info-box .fpass-text{
+		font-size: 16px;
+	}
+
+	.hajj-info-box{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.hajj-timer-content h3,
+	.hajj-reg-info-content h3,
+	.login-info-box h3{
+		font-size: 22px;
+	}
+	.hajj-reg-info-content h2{
+		font-size: 32px;
+	}
+	.hajj-reg-info-content .hajj-info-block .hajj-reg-info-item p{
+		font-size: 20px;
+	}
+
+	.src-btn-group .btn, .login-info-box .btn{
+		padding-top: 8px;
+		padding-bottom: 8px;
+		font-size: 18px;
+	}
+	.login-info-box .btn:hover{
+        color: #ffffff !important;
+        background: #097E35 !important;
+    }
+
+	.profile-info-item,
+	.ehajj-profile-info-head h3{
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.dash-profile-left-info{
+		display: flex;
+		justify-content: space-between;
+	}
+	.dash-profile-left-info .white-box{
+		width: calc(33.33333% - 15px);
+	}
+
+	.flight-info-lists ul li{
+		font-size: 14px;
+	}
+
+	.card-form-group .card-form-block{
+		padding-left: 0;
+	}
+	.card-form-group .card-form-block label {
+	    position: relative;
+	    left: auto;
+	    top: auto;
+	    width: 100%;
+	}
+}
+
+@media (max-width: 1199px){
+	.rajuk-home-slider .carousel-item{
+		height: 300px;
+		min-height: 300px;
+	}
+
+	.hajj-reg-info-content h2{
+		font-size: 28px;
+	}
+	.hajj-reg-info-content h3{
+		font-size: 22px;
+	}
+	.hajj-reg-info-content .hajj-info-block .hajj-reg-info-item p{
+		font-size: 20px;
+	}
+
+	.home-slider-item{
+		height: 350px;
+	}
+
+	.certificate-menu-item a{
+		height: 112px;
+	}
+	.dash-menu-certificate{
+		margin-top: 20px;
+	}
+	.dash-menu-certificate .certificate-menu-item:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.container{
+		max-width: calc(100% - 100px);
+	}
+	.ehajj-profile-info .profile-info-wrap{
+		display: flex;
+		max-width: 600px;
+	}
+	.ehajj-profile-info .profile-info-wrap .ehajj-profile-info-head{
+		border-bottom: none;
+		padding: 0 40px 0 0;
+		margin: 0;
+	}
+	.ehajj-profile-info .profile-info-wrap .ehajj-profile-info-head:after{
+		content: "";
+		position: absolute;
+		right: 20px;
+		top: 0;
+		bottom: 0;
+		height: auto;
+		width: 1px;
+		background: rgba(0, 0, 0, 0.12);
+		display: block;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+	.container{
+		max-width: calc(100% - 60px);
+	}
+}
+@media (max-width: 991px){
+	.deskView{
+		display: none !important;
+	}
+	.hajj-dashboard .container-fluid{
+		max-width: calc(100% - 60px);
+	}
+
+	.hajj-dashboard-container{
+		padding-left: 0;
+	}
+	.hajj-dashboard-container .dash-sidebar{
+		position: fixed;
+		top: 90px;
+		left: -322px;
+		z-index: 999;
+	}
+	.hajj-dashboard-container .dash-sidebar.show{
+		left: 0;
+	}
+
+	.site-header .navbar-nav{
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+
+	.home-slider{
+		padding-bottom: 50px;
+	}
+
+	.copyright-content{
+		padding: 15px 0;
+	}
+	.copyright-content p{
+		width: 100%;
+		max-width: 470px;
+		display: inline-block;
+	}
+	.copyright-content p br{
+		display: none;
+	}
+
+	.ehajj-footer-logo{
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	.hajj-reg-info-content{
+		max-width: 570px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.copyright-content .dby-others-logo,
+	.copyright-content .developed-by{
+		position: relative;
+		right: auto;
+		top: auto;
+	}
+
+	.footer-text{
+		text-align: center;
+	}
+	.footer-menu{
+		padding: 20px 0;
+	}
+	.footer-menu .footer-social-menu{
+		position: relative;
+		right: auto;
+		top: auto;
+		text-align: center;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.hajj-reg-info-content h2,
+	.dash-tab-content h2{
+		font-size: 34px;
+	}
+
+	.hajj-registration-info .sec-bg-gray{
+		background: none !important;
+	}
+
+	.hajj-reg-info-content h3{
+		margin-bottom: 15px;
+		margin-top: 10px;
+		font-size: 24px;
+	}
+	.home-intro-section{
+		padding-bottom: 20px;
+	}
+	.hajj-timer-secton{
+		padding-top: 0 !important;
+	}
+
+	.home-user-login{
+		max-width: 480px;
+		min-height: 450px;
+		margin: 0 auto;
+	}
+	.home-slider-item{
+		height: 340px;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+
+	.dash-profile-wrapper,
+	.hajj-profile-dashboard{
+		max-width: 480px;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		padding-top: 30px;
+	}
+
+}
+
+@media (max-width: 767px){
+	.footer-menu .footer-menu-list li{
+		padding: 0 10px;
+	}
+
+	.home-slider-item{
+		height: 300px;
+	}
+	.slider-notice .slider-notice-item h3{
+		font-size: 20px;
+	}
+	.slider-notice .slider-notice-item p{
+		font-size: 16px;
+	}
+
+	.hajj-reg-info-content .hajj-info-block .hajj-reg-info-item p,
+	.footer-menu li a{
+		font-size: 18px;
+	}
+
+	.hajj-dashboard .container-fluid{
+		max-width: 100%;
+	}
+
+	.hajj-reg-info-content h2{
+		font-size: 34px;
+	}
+
+	.dash-tab-content h2,
+	.dash-tab-content h2,
+	.hajj-timer-content h2{
+		font-size: 28px;
+	}
+
+	.hajj-reg-info-content h3,
+	.hajj-timer-content h3{
+		font-size: 24px;
+	}
+	.hajj-timer-content p{
+		font-size: 16px;
+	}
+
+	.dash-tab-content,
+	.hajj-info-graph{
+		min-height: 100px;
+	}
+
+	.footer-appstore a{
+		max-width: 120px;
+		margin: 5px;
+	}
+
+	.src-hajj-listing-info{
+		padding-top: 0 !important;
+	}
+	.src-hajj-listing-info .d-flex-space{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.src-hajj-listing-info .src-list-text{
+		margin-bottom: 10px;
+	}
+
+    .form-content .form-block .form-label-left{
+        width: 160px;
+    }
+    .form-content .form-block .form-input {
+        width: calc(100% - 160px);
+    }
+
+    .slider-notice .slider-notice-item{
+    	margin-bottom: 20px;
+    }
+    .notice-container .notice-item p,
+    .slider-notice .slider-notice-item h3{
+    	font-size: 18px;
+    }
+    .slider-notice .slider-notice-item h3 span{
+    	margin-left: 5px;
+    }
+    .slider-notice .slider-notice-item p{
+    	font-size: 14px;
+    }
+    .sec-title h2{
+    	font-size: 24px;
+    }
+    .hajj-package-list .package-list-item{
+    	min-height: 50px;
+    }
+    .hajj-package-list .package-list-item,
+    .hajj-package-list .package-list-item .list-text{
+    	font-size: 20px;
+    }
+    .hajj-imp-links-item{
+    	font-size: 16px;
+    }
+    .alc-room-list-table table td,
+	.alc-room-list-table table th{
+		padding: 10px;
+	}
+	.card-form-group .card-form-block{
+		padding-left: 0;
+	}
+	.card-form-group .card-form-block label{
+		position: relative;
+		left: auto;
+		top: auto;
+	}
+	.home-alc-container .card-form-group{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.main-section-card .card-form-footer{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.ehajj-list-table .table th,
+	.ehajj-list-table .table td{
+		font-size: 12px;
+		padding: 8px;
+	}
+	.flight-info-lists ul li{
+		font-size: 14px;
+	}
+	.dash-feature-cards-sec .dash-feature-col{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.feature-cards-item{
+		width: 100%;
+		max-width: 380px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (max-width: 575px){
+
+	.site-main .site-header .container{
+		max-width: 100%;
+	}
+
+	.site-main .site-header .navbar .navbar-brand img{
+		max-height: 48px;
+		margin-top: 5px;
+	}
+
+	.hajj-timer-content h3,
+	.hajj-reg-info-content h3,
+	.section-title h2,
+	.dash-tab-content h2{
+		font-size: 24px;
+	}
+	.hajj-reg-info-content h2{
+		font-size: 28px;
+	}
+
+	.login-info-box h3{
+		font-size: 20px;
+	}
+
+	.hajj-reg-info-content .hajj-info-block .hajj-reg-info-item p{
+		font-size: 16px;
+	}
+
+	.dash-tab-content h3{
+		font-size: 18px;
+	}
+
+	p{
+		font-size: 14px;
+	}
+	.copyright-content p{
+		font-size: 12px;
+	}
+
+	.hajj-reg-info-content .hajj-info-block .hajj-reg-info-item p,
+	.footer-menu li a,
+	.developed-by span{
+		font-size: 15px;
+	}
+	.login-info-box p,
+	.login-info-box .fpass-text{
+		font-size: 16px;
+	}
+
+	.footer-menu .footer-menu-list li{
+		margin: 0;
+	}
+	.home-user-login{
+		max-width: calc(100% - 60px);
+		min-height: 360px;
+	}
+	.home-intro-section{
+		padding: 40px 0 30px;
+	}
+	.dash-tab-content{
+		padding: 20px 15px;
+	}
+	.hajj-info-type{
+		font-size: 14px;
+	}
+    .form-content .form-block{
+        flex-direction: column;
+    }
+    .form-content .form-block .form-input,
+    .form-content .form-block .form-label-left{
+        width: 100%;
+        padding-left: 0;
+    }
+    .slider-notice{
+    	width: 90%;
+    }
+    .slider-notice .slider-notice-item h3{
+    	font-size: 18px;
+    }
+    .slider-notice .slider-notice-item p{
+    	font-size: 14px;
+    }
+    .dby-others-logo img,
+    .developed-by img{
+    	max-height: 50px;
+    }
+
+    .dash-section-card .section-card-container .dash-col{
+		-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.hajj-profile-dashboard{
+		padding-top: 20px;
+	}
+	.section-gmb-lists .dash-table.table tbody td,
+	.section-gmb-lists .dash-table.table thead th{
+		font-size: 11px;
+	}
+	.section-gmb-lists .dash-table.table .btn-listview-round i,
+	.section-gmb-lists .dash-table.table .btn-listview-round{
+		font-size: 10px;
+	}
+	.alc-room-list-table table td,
+	.alc-room-list-table table th{
+		padding: 10px 8px;
+		font-size: 13px;
+	}
+
+	.flight-tab-menu{
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		row-gap: 10px;
+	}
+
+	.td-title-text{
+		white-space: nowrap;
+	}
+
+}
+@media (max-width: 399px){
+	.hajj-reg-info-content .hajj-info-block .hajj-reg-info-item p{
+		font-size: 16px;
+	}
+	.hajj-reg-info-content h3{
+		font-size: 20px;
+	}
+	.footer-menu .footer-menu-list li a{
+		padding: 5px 0;
+		font-size: 14px;
+	}
+	.hajj-reg-info-content h2{
+		font-size: 26px;
+	}
+
+	.home-user-login{
+		max-width: calc(100% - 40px);
+		min-height: 320px;
+	}
+	.footer-menu .footer-menu-list li{
+		padding: 0 7px;
+	}
+
+	.site-main .site-header .navbar .site-nav-box{
+		height: 60px;
+	}
+	.site-main .site-header .navbar .navbar-brand img{
+		max-height: 50px;
+	}
+	.site-main{
+		padding-top: 80px;
+	}
+	.home-intro-section{
+		padding: 30px 0 20px;
+	}
+	.section-title h2, .dash-tab-content h2{
+		font-size: 24px;
+	}
+	.dash-head-left .navbar-toggler{
+		padding: 6px;
+	}
+
+	.section-gmb-lists .dash-table.table tbody td,
+	.section-gmb-lists .dash-table.table thead th{
+		font-size: 10px;
+	}
+	.dash-table.table thead th, .dash-table.table tbody td{
+		padding: 8px 5px;
+	}
+
+	.alc-room-list-table table td,
+	.alc-room-list-table table th{
+		padding: 10px 6px;
+	}
+
+	.flight-info-lists ul li{
+		font-size: 13px;
+	}
+
+
+}
+
+@media (max-width: 374px){
+	.section-gmb-lists .dash-list-table .dash-table.table {
+	  min-width: 350px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

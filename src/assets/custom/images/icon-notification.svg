@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Notification_Background_Mask_" data-name="Notification (Background/Mask)" width="38" height="38" transform="translate(0 0.072)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Notification" transform="translate(0 -0.072)" clip-path="url(#clip-path)">
+    <g id="Group" transform="translate(3.829 3.482)">
+      <path id="Vector" d="M0,23.405V10.879a10.879,10.879,0,1,1,21.758,0V23.405H0Z" transform="translate(3.484)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2" stroke-dasharray="0 0"/>
+      <path id="Vector-2" data-name="Vector" d="M0,0H28.71" transform="translate(0 23.405)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2" stroke-dasharray="0 0"/>
+      <path id="Vector-3" data-name="Vector" d="M6.4,0A3.2,3.2,0,0,1,3.2,3.2,3.19,3.19,0,0,1,0,0" transform="translate(11.148 26.556)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2" stroke-dasharray="0 0"/>
+    </g>
+    <g id="Ellipse_174" data-name="Ellipse 174" transform="translate(22 4.072)" fill="#f35c58" stroke="#fff" stroke-width="1" stroke-dasharray="0 0">
+      <circle cx="6" cy="6" r="6" stroke="none"/>
+      <circle cx="6" cy="6" r="5.5" fill="none"/>
+    </g>
+  </g>
+</svg>
