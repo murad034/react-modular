@@ -36,7 +36,7 @@ const BankPage = () => {
               />
             </svg>
           </span>
-          <h3>New Flight</h3>
+          <h3>Create Bank</h3>
         </div>
       </div>
 
@@ -164,22 +164,22 @@ const BankPage = () => {
                 </Field.Root>
 
                 <Field.Root
-                  className="card-form-block"
-                  invalid={!!errors.active_status}
+                  className="card-form-block bs_radio"
+                  invalid={!!errors.is_active}
                 >
-                  <Field.Label>Active Status</Field.Label>
+                  <Field.Label> Active Status</Field.Label>
                   <RadioGroup
-                    name="active_status"
-                    value={formData.active_status}
+                    name="is_active"
+                    value={formData.is_active}
                     onChange={handleChange}
                   >
                     <HStack spacing="10" gap="12">
                       <Radio value="1">Active</Radio>
-                      <Radio value="0">Inactive</Radio>
+                      <Radio style={{marginLeft: "20%"}} value="0"> Inactive</Radio>
                     </HStack>
                   </RadioGroup>
-                  {errors.active_status && (
-                    <Field.ErrorText>{errors.active_status[0]}</Field.ErrorText>
+                  {errors.is_active && (
+                    <Field.ErrorText>{errors.is_active[0]}</Field.ErrorText>
                   )}
                 </Field.Root>
               </div>
