@@ -174,7 +174,7 @@ const BankPage = () => {
                     onChange={handleChange}
                   >
                     <HStack spacing="10" gap="12">
-                      <Radio value="1">Active</Radio>
+                      <Radio value="1"> Active</Radio>
                       <Radio style={{marginLeft: "20%"}} value="0"> Inactive</Radio>
                     </HStack>
                   </RadioGroup>
